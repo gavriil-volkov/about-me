@@ -1,0 +1,245 @@
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+* {
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#title {
+  color: #000;
+}
+
+#portfolio {
+  font-family: cursive;
+}
+
+h1 {
+  font-size: 65px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+#wrapAll {
+  max-width: 100%;
+}
+
+#container {
+  max-width: 1300px;
+  margin: auto;
+}
+
+#logo {
+  height: 150px;
+  text-align: center;
+}
+
+#logo p {
+  margin-top: 0;
+}
+
+#logo:hover {
+  transition: 1.0s;
+  color: #000;
+  cursor: none;
+}
+
+#logo img {
+  max-height: 130px;
+}
+
+#menu {
+  background-color: #a60000;
+  height: 75px;
+  text-align: center;
+}
+
+#menu li {
+  list-style: none;
+  padding: 25px 10px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+ul {
+  margin: 0;
+  padding: 5px 0;
+}
+
+#myPhoto {
+  float: left;
+    width: 49%;
+    text-align: center;
+    padding: 15% 0;
+    -webkit-transition: all 5.0s;
+    transition: all 5.0s;
+}
+
+#intro {
+  float: left;
+  width: 49%;
+  padding: 10% 0;
+}
+
+#intro ul {
+  padding: 5px 25px;
+}
+
+.bigRed {
+  font-size: 40px;
+  color: #a60000;
+  text-transform: uppercase;
+}
+
+.bigWhite {
+  font-size: 30px;
+  color: #fff;
+}
+
+#info1, #info2 {
+  float: left;
+  text-align: center;
+  padding: 25px 0;
+  width: 100%;
+}
+
+table {
+  width: 100%;
+}
+
+td {
+  width: 33%;
+  height: 350px;
+  border: 10px solid #000;
+  background-color: brown;
+  margin-right: 15px;
+}
+
+#photo {
+  float: left;
+  width: 100%;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.imageBlock {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: grayscale(100%); /* Чёрно-белое изображение */
+  transition: 1.0s; /* Плавный переход */
+}
+
+.imageBlock:hover {
+  filter: none;
+}
+
+ #image1 {
+  background-image: url(../img/MRBENZ-ico.jpg);
+  
+}
+#image2 {
+  background-image: url(../img/DP-LOGO-min.jpg);
+}
+
+#image3 {
+  background-image: url(../img/Hovanskiy-Logojpg.jpg);
+}
+
+#image4 {
+  background-image: url(../img/UV-NEW2.jpg);
+}
+
+#image5 {
+  background-image: url(../img/Lookoshko-ico.jpg);
+}
+
+#image6 {
+  background-image: url(../img/VA-logo-RGB-1.jpg);
+}
+
+#contacts {
+  float: left;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  width: 100%;
+}
+
+#myBlurPhoto {
+  float: left;
+  text-align: center;
+  width: 100%;
+  filter: grayscale(100%) contrast(150%);
+  margin-bottom: 50px;
+}
+
+footer {
+  background-color: #a60000;
+  color: #000;
+  float: left;
+  height: 150px;
+  text-align: center;
+  width: 100%;
+  padding: 5% 0;
+  font-size: 50px;
+}
+
+#logo:hover {
+  animation: shake 1.2s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+.marquee{
+  width:100%;
+  white-space:nowrap;
+  overflow:hidden;
+  }
+   
+  .marquee span {
+  color: #000;
+  font-size:35px;
+  display:inline-block;
+  padding-left:100%;
+  -webkit-animation: marquee 30s infinite linear;
+  animation: marquee 30s infinite linear;
+  }
+   
+  @-webkit-keyframes marquee {
+  0%{-webkit-transform: translate(0, 0);}
+  100%{-webkit-transform: translate(-100%, 0);}
+  }
+  @keyframes marquee{
+  0%{transform: translate(0, 0);}
+  100%{transform: translate(-100%, 0)}
+  }
